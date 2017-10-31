@@ -1,0 +1,144 @@
+/*头部*/
+#head{
+    width:100%;
+    height:235px;
+    background:url(../img/header/bg.jpg) no-repeat top center;
+    min-width:1160px;
+}
+.head-container{
+    height:180px;
+    margin:0 auto;
+}
+
+.head-t{
+    width:100%;
+    height:42px;
+    margin:0 auto;
+    box-shadow:0 0px 3px rgba(0,0,0,.5);
+    position: relative;
+}
+/*头部-背景模糊*/
+.head-t .head-sty-blur-1,.head-sty-blur-2{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:42px;
+}
+
+.head-t .head-sty-blur-1{
+    background:url(../img/header/bg.jpg) no-repeat top center;
+    filter: blur(5px);
+}
+
+.head-t .head-sty-blur-2{
+    background: rgba(255,255,255,.4);
+}
+/*头部-主菜单*/
+.head-t  .head-t-main{
+    position: relative;
+    width:1160px;
+    height:42px;
+    margin:0 auto;
+}
+
+.head-t  .head-t-main ul.h-t-m-left{
+    position: absolute;
+    width:400px;
+    height:42px;
+
+}
+
+.head-t .head-t-main ul.h-t-m-left>li{
+    height:42px;
+    line-height:42px;
+    float:left;
+    position: relative;
+}
+
+.head-t .head-t-main ul.h-t-m-left>li:hover{
+    background:rgba(255,255,255,.4);
+}
+.head-t .head-t-main>ul.h-t-m-left>li>a{
+    display: block;
+    height:42px;
+    color:#000;
+    font-size:14px;
+    padding:0 14px;
+}
+
+.head-t-main ul.h-t-m-left li.l1>a>i{/*不是直接子元素不能用>,这里加上>图标不显示,要加上> 只能是li.l1>a>i*/
+    position:relative;
+    top:2px;
+    display: inline-block;
+    width:16px;
+    height:16px;
+    margin-right:5px;
+    background:url(../img/icons.png) -920px -86px;
+}
+
+.head-t-main ul.h-t-m-left>li>a>.icon{
+    position: absolute;
+    top:4px;
+	right:-5px;
+    display: inline-block;
+    width:24px;
+    height:11px;
+    background:url(../img/icons.png) -850px -410px;
+}
+
+
+.head-t-main .h-t-m-right{
+    height:42px;
+}
+.head-t-main .h-t-m-right .h-login{
+    float: left;
+    display: block;
+    width:100px;
+    height:42px;
+    line-height: 42px;
+    position: relative;
+}
+
+.head-t-main .h-t-m-right .h-login a{
+    float: left;
+    display: block;
+    height: 42px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.head-t-main .h-t-m-right .h-login a+span{
+    position: absolute;
+    top:14px;
+    left:48px;
+    display: inline-block;
+    width:1px;
+    height:13px;
+    overflow: hidden;
+    background:#eee;
+}
+
+.head-t-main .h-t-m-right .h-post{
+    float: right;
+    width: 58px;
+    height: 48px;
+    background: url(../img/header/top/login/post.png);
+}
+.head-t-main .h-t-m-right .h-post .c-a{
+    display: block;
+    width: 58px;
+    height: 48px;
+    line-height: 42px;
+    text-align:center;
+    color:#fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*头部-主导航*/
+.head-navbar{
+    width:1160px;
+    height:45px;
+    background: red;
+    margin:0 auto;
+    padding-top:15px;
+}

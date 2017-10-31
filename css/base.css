@@ -66,7 +66,7 @@ body {
 }
 
 a {
-    color: #666;
+    color: #000;
     text-decoration: none;
 }
 
@@ -111,10 +111,4 @@ s, i, em {
 
 .hide {
     display: none
-}
-.container{
-    width:1200px;
-    margin:0 auto;
-    position: relative;
-    min-width:1200px;
 }
