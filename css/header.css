@@ -7,7 +7,6 @@
 }
 .head-container{
     height:180px;
-    margin:0 auto;
 }
 
 .head-t{
@@ -35,18 +34,17 @@
 }
 /*头部-主菜单*/
 .head-t  .head-t-main{
-    position: relative;
+    position: relative;/*不加会导致投稿隐藏--不清楚原因*/
     width:1160px;
     height:42px;
     margin:0 auto;
 }
-
+/*可省略*/
 .head-t  .head-t-main ul.h-t-m-left{
     position: absolute;
-    width:400px;
+    width:470px;
     height:42px;
-
-}
+}/*可省略*/
 
 .head-t .head-t-main ul.h-t-m-left>li{
     height:42px;
