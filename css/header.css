@@ -48,7 +48,7 @@
 
 .head-t .head-t-main ul.h-t-m-left>li{
     height:42px;
-    line-height:42px;
+    /*line-height:42px;*/
     float:left;
     position: relative;
 }
@@ -59,6 +59,7 @@
 .head-t .head-t-main>ul.h-t-m-left>li>a{
     display: block;
     height:42px;
+    line-height:42px;
     color:#000;
     font-size:14px;
     padding:0 14px;
@@ -86,34 +87,27 @@
 /*游戏中心隐藏菜单*/
 .head-t-main ul.h-t-m-left .gc-hide{
     position: absolute;
-    width:448px;
-    height:235px;
+    width:466px;
+    height:255px;
     background: #fff;
     border-bottom:1px solid #555;
     border-radius: 1px 1px 3px 3px;
-    padding: 8px;
+    display: none;
 }
 
 .head-t-main  .gc-hide  .gc-h-l{
-    width:240px;
-    height:235px;
+    width:260px;
+    height:255px;
     float: left;
-    border:1px solid red;
+}
 
-}
-.head-t-main  .gc-hide  .gc-h-r{
-    width:200px;
-    height:235px;
-    float: left;
-    border:1px solid red;
-    margin-left:3px;
-}
 .head-t-main  .gc-hide  .gc-h-l-t{
     position: relative;
     width:240px;
     height:120px;
     background: url(../img/header/top/game/1.jpg);
     border-radius: 4px;
+    margin: 10px auto 15px;
 }
 .head-t-main  .gc-hide  .gc-h-l-t a{
     display: block;
@@ -131,32 +125,165 @@
     padding-left: 10px;
     background:-webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5));
 }
-/*游戏中心隐藏菜单上部分结束*/
-/*游戏中心隐藏菜单下部分*/
+
 
 .head-t-main  .gc-hide  .gc-h-l-b{
-    width:240px;
-    height:100px;
-    margin-top:8px
-    border:1px solid red;
+    width:260px;
+    height:110px;
 }
 .head-t-main  .gc-hide  .gc-h-l-b a{
     display: block;
     float: left;
-    width:65px;
-    height:93px;
-    margin:10px 7px 0;
+    width:86px;
+    height:110px;
+
     text-align: center;
 }
 
-.head-t-main  .gc-hide  .gc-h-l-b a img{
+.head-t-main  .gc-hide  .gc-h-l-b a>img{
+    display: block;
     width:67px;
     height: 67px;
+    margin:0 auto 5px;
+}
+/*游戏中心隐藏菜单右部分*/
+.head-t-main  .gc-hide  .gc-h-r{
+    width:195px;
+    height:230px;
+    float: right;
+    margin:10px 10px 0 0;
+    box-shadow: -4px 0px 1px -2px;
+    position: relative;
+}
+.head-t-main  .gc-hide  .gc-h-r .h-r-titile{
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width:96px;
+    height:29px;
+}
+.gc-hide  .gc-h-r .h-r-forum{
+    margin-top: 5px;
+    float: right;
+    color: #09f;
+    font-size: 12px;
+}
+.gc-hide  .gc-h-r .h-r-list{
+    padding-top: 40px;
+}
+.gc-hide  .gc-h-r ul.h-r-list li a{
+    font-size: 12px;
+    text-indent: 20px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+/*直播隐藏菜单*/
+
+.live-hide{
+    position:absolute;
+    width:522px;
+    height:240px;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    border-raidus:0 0 3px 3px;
+}
+.live-hide .live-l{
+    float: left;
+    width:261px;
+    height:220px;
+    padding: 20px 0 0 20px;
+}
+.live-hide .live-l .hot-live{
+    font-size: 14px;
+    color: #ea559f;
 }
 
+.live-hide .live-l .live-l-lis li{
+    width:67px;
+    height:83px;
+    float:left;
+    margin: 12px 15px 0 0;
+    position: relative;
+}
 
+.live-hide .live-l .live-l-lis li .cover{
+    position: absolute;
+    top:0;
+    left:0;
+    width:67px;
+    height:67px;
+    line-height:67px;
+    text-align:center;
+    border-radius: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    -o-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    opacity:0;
 
+}
 
+.live-hide .live-l .live-l-lis li:hover .cover{
+    transform:scale(1);
+    transition:0.3s;
+    opacity:1;
+
+}
+
+.live-hide .live-l .live-l-lis li .cover .cover1{
+    display: inline-block;
+    width:12px;
+    height:12px;
+    margin-top:10px;
+    border-radius:100%;
+    background:red;
+}
+
+.live-hide .live-l .live-l-lis li .cover .cover2{
+    color:#eee;
+    font-size:12px;
+    margin-left:5px;
+}
+
+.live-hide .live-l  .live-l-lis li img{
+    display: block;
+    border-radius: 100%;
+
+}
+.live-hide .live-l .live-l-lis li p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.live-hide .live-r{
+    float: right;
+    width:240px;
+}
+.live-r .content{
+    width: 240px;
+    height: 195px;
+    border-left: 1px solid #eee;
+}
+
+.live-r .live-r-activity{
+    padding:20px 0 0 0px;
+}
+.live-r  .hot-activity{
+    text-indent: 20px;
+    font-size: 14px;
+    color: #ea559f;
+}
+.live-r  .live-r-activity a{
+     width: 208px;
+     height: 80px;
+     padding: 10px 17px;
+     display: block;
+
+ }
 
 .head-t-main .h-t-m-right{
     height:42px;
