@@ -186,7 +186,8 @@
     height:240px;
     background:#fff;
     border-bottom:1px solid #eee;
-    border-raidus:0 0 3px 3px;
+    border-radius:0 0 3px 3px;
+    display: none;
 }
 .live-hide .live-l{
     float: left;
@@ -284,6 +285,68 @@
      display: block;
 
  }
+/*头部-登录右侧投稿隐藏界面*/
+.h-t-m-right .h-post .post-hide{
+    width: 146px;
+    height: 65px;
+    background: #fff;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    display: none;
+}
+.h-t-m-right .h-post:hover .post-hide{
+    display: block;
+}
+.h-t-m-right .h-post .p-h-l,.p-h-r{
+    width:73px;
+    height:65px;
+    float: left;
+
+}
+.h-t-m-right .post-hide  .p-h-over:hover{
+    background-color: #eee;
+}
+
+.h-t-m-right .h-post .p-h-l a,.p-h-r a{
+    display: block;
+    padding: 12px 10px 9px 10px;
+}
+.h-t-m-right .h-post .p-h-img{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons.png);
+    margin: 0 auto;
+}
+.h-t-m-right .h-post p{
+    text-align: center;
+    margin-top:6px;
+    color:#f60;
+    font-size:12px;
+}
+.h-t-m-right .h-post .p-h-l .p-img1{
+    background-position: -470px -918px;
+}
+.h-t-m-right .h-post .p-h-r .p-img2{
+    background-position: -470px -981px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .head-t-main .h-t-m-right{
     height:42px;
