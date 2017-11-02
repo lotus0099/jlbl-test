@@ -19,6 +19,8 @@ ul, ol {
 input {
     padding-top: 0;
     padding-bottom: 0;
+    border:none;
+    outline:none;
 }
 
 select, input {
