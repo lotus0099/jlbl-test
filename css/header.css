@@ -412,10 +412,6 @@
     float: left;
 }
 
-
-
-
-
 .search{
     width:340px;
     height:34px;
@@ -486,23 +482,270 @@
 .s-sec i:hover{
         background-position: -728px -727px;
 }
-
-
-
-
-
-
-
-
-
-
+/*头部-logo search部分结束*/
 
 
 /*头部-主导航*/
 .head-navbar{
     width:1160px;
-    height:45px;
-    background: red;
+    height:60px;
+
     margin:0 auto;
-    padding-top:15px;
+    /*padding-top:15px;*/
+}
+.navLis{
+    width:840px;
+    height:52px;
+    padding-top:8px;
+    float: left;
+    border-right: 1px solid yellow;
+}
+.navLis .nav-li{
+    height:52px;
+    width:30px;
+    float: left;
+    padding: 0 21px;
+
+}
+.navLis .nav-li.l1{
+    padding: 0;
+    margin-right: 15px;
+}
+
+.navLis .nav-li .num{
+    display: block;
+    font-size:12px;
+    background: #FFB3CC;
+    border-radius:4px;
+    padding: 1px 3px;
+    color:#fff;
+    font-weight:bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navLis .nav-li.l1 .num{
+    width: 21px;
+    height: 21px;
+    margin-bottom:3px;
+    background: url(../img/icons.png) -657px -1172px;
+}
+.navLis .nav-li .txt{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+.navSide{
+    width:319px;
+    height:52px;
+    float: right;
+    padding-top:8px;
+}
+
+
+.navSide li.square,.navSide li.live{
+    width: 60px;
+    height: 45px;
+    float: left;
+    position: relative;
+}
+.navSide li.square{
+    margin-left: 15px;
+}
+.navSide li.live{margin-left: 20px;}
+.navSide li.square a,li.live a{
+    display: block;
+    height:100%;
+}
+.navSide li.square a .img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons.png) -662px -918px;
+    float: left;
+    margin-top: 12px;
+}
+
+.navSide li.square .square-hide{
+    width:390px;
+    height:230px;
+    position: absolute;
+
+    box-shadow: 0px 1px 1px #ccc;
+    display: none;
+}
+
+.navSide li.square .square-hide .sq-hd-l{
+    width:110px;
+    height:200px;
+    margin-top: 15px;
+    float: left;
+    border-right: 1px solid #eee;
+}
+
+.sq-hd-Lis>li{
+    width:100%;
+    height:30px;
+    transition:padding .3s;
+}
+.sq-hd-Lis>li a{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.sq-hd-Lis>li:hover a{
+    background:#eee;
+    padding-left: 25px;
+}
+.sq-hd-Lis>li a span.sq-h-txt{
+    display: inline-block;
+    font-size:12px;
+    vertical-align: middle;
+}
+.sq-hd-Lis>li a span.sq-h-img{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/icons.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.sq-hd-Lis>li a span.sq-h-img.h-i1{
+    background-position:-280px -1180px;
+}
+.sq-hd-Lis>li a span.sq-h-img.h-i2{
+    background-position:-280px -1241px;
+}
+.sq-hd-Lis>li a span.sq-h-img.h-i3{
+    background-position:-280px -1370px;
+}
+.sq-hd-Lis>li a span.sq-h-img.h-i4{
+    background-position:-280px -1433px;
+}
+
+
+.navSide li.square .square-hide .sq-hd-r{
+    width:275px;
+    float: right;
+    margin:15px auto;
+}
+.navSide li.square .square-hide .sq-hd-r img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+.navSide li.square:hover .square-hide{
+    display: block;
+}
+
+
+
+
+.navSide li.square>a span,.navSide li.live>a span{
+    display: block;
+    float: left;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 3px;
+}
+.navSide li.live a .img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons.png) -662px -532px;
+    float: left;
+    margin-top: 12px;
+
+}
+
+.navSide li.phone{
+    width: 58px;
+    height: 40px;
+    background-image: url(../img/header/app-link.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: right;
+    position: relative;
+}
+.navSide .gif {
+    width: 76px;
+    height: 44px;
+    float: left;
+    margin-left: 20px;
+}
+.navSide .gif a{
+    display: block;
+    height: 44px;
+}
+.nav-li .hideLis{
+    position: absolute;
+    box-shadow:0px 1px 1px #ccc;
+    margin-left: -13px;
+    display: none;
+}
+
+.nav-li:hover .hideLis{
+    display: block;
+}
+.nav-li .hideLis li a{
+    display: block;
+    font-size:12px;
+    height:30px;
+    line-height: 30px;
+    padding-right: 15px;
+    padding-left: 10px;
+    min-width:95px;
+}
+
+.nav-li .hideLis li a:hover{
+    background:#E5E9EF;
+
+}
+.nav-li .hideLis li a span.l-arrow,.nav-li .hideLis li a span.r-arrow{
+    display: inline-block;
+    margin-right: 3px;
+    width: 8px;
+    height: 15px;
+    margin-top:4px;
+}
+.nav-li .hideLis li a span.l-arrow{
+    background: url(../img/icons2.png) 0px -1618px;
+
+    margin-right: 3px;
+}
+.nav-li .hideLis li a span.r-arrow {
+    width: 8px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+}
+.nav-li .hideLis li a span.r-arrow span{
+    display: inline-block;
+    position: absolute;
+    left:30px;
+    background: url(../img/icons2.png) 0px -1581px;
+    margin-left: 3px;
+    width: 8px;
+    height: 15px;
+    opacity: 0;
+
+}
+.nav-li .hideLis li a:hover span.r-arrow span{
+    opacity: 1;
+    left:0;
+    transition:.1s;
+}
+
+.nav-li .hideLis li a:hover {
+    background:#E5E9EF;
+    padding-right:10px;
+    padding-left:15px;
+    transition:.1s;
+
 }
