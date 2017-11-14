@@ -1,0 +1,107 @@
+#banner{
+    width:980px;
+    height: 220px;
+    margin: 10px auto 0;
+    border: 1px solid red;
+}
+#b-main{
+    width:440px;
+    height: 220px;
+    float: left;
+    position: relative;
+}
+.pic{
+    width:440px;
+    height: 220px;
+    overflow:hidden;
+}
+.pic .p-ul{
+    width:700%;
+    height: 220px;
+}
+.pic .p-ul .bannerList{
+    height: 220px;
+    float: left;
+    position: relative;
+}
+.pic .bannerList>a{
+    display: block;
+}
+.pic .bannerList p{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    text-indent:20px;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.7))
+}
+.pic .bannerList p>a{
+    color:#fff;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.tab{
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    width: 150px;
+    height: 20px;
+    z-index: 10;
+}
+
+.tab .t-ul .tabList{
+    width:20px;
+    height:20px;
+    background-image: url(../img/icons.png);
+    background-position: -854px -790px;
+    float: left;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.tab .t-ul .tabList.hover{
+    background-position:-918px -790px;
+}
+.tab .t-ul .tabList.on{
+    background-position: -854px -726px;
+}
+
+#b-main .more{
+    position: absolute;
+    bottom:36px;
+    right:15px;
+    width:45px;
+    height:25px;
+    background:rgba(0, 0, 0, 0.5);
+    color:#fff;
+    font-size::12px;
+    text-align: center;
+    line-height: 25px;
+    border-radius:5px;
+}
+#b-main .more:hover{
+    text-shadow: 0 0 5px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#b-show{
+    width:520px;
+    height: 220px;
+    float: right;
+    background: yellow;
+}
